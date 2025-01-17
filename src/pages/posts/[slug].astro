@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/post.astro";
+
+const { slug } = Astro.params;
+
+const entry = await getCollection("post").then(posts =>
+  posts.find(post => post.slug === slug)
+);
+
+if (!entry) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not Found'
+  });
+}
+
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title}>
+  <Content />
+</Layout>
