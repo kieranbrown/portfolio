@@ -1,22 +1,12 @@
 ---
 import { getCollection } from "astro:content";
-const allPosts = await getCollection("post");
+const allPosts = await getCollection("posts");
 
 const { count } = Astro.props;
 
-function parseDate(dateStr: string) {
-  const [month, day, year] = dateStr.split(" ");
-  return new Date(`${month} ${day}, ${year}`);
-}
+const sortedPosts = allPosts.toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
 
-const sortedPosts = allPosts
-  .map((post) => ({
-    ...post,
-    date: parseDate(post.data.dateFormatted),
-  }))
-  .sort((a, b) => b.date.getTime() - a.date.getTime());
-
-const postsLoop = sortedPosts.slice(0, count).map((post) => {
+const posts = sortedPosts.slice(0, count).map((post) => {
   return {
     ...(post.data || {}),
     link: `/posts/${post.slug}`,
@@ -25,7 +15,7 @@ const postsLoop = sortedPosts.slice(0, count).map((post) => {
 ---
 
 {
-  postsLoop.map((post) => {
+  posts.map((post) => {
     return (
       <div
         class="relative border border-transparent border-dashed cursor-pointer p-7 group rounded-2xl"
@@ -83,7 +73,7 @@ const postsLoop = sortedPosts.slice(0, count).map((post) => {
             <span>{post.description}</span>
           </p>
           <div class="mt-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-300">
-            Posted on {post.dateFormatted}
+            Posted on {post.date.toLocaleDateString('en-GB', { weekday:"long", year:"numeric", month:"short", day:"numeric" })}
           </div>
         </div>
       </div>
