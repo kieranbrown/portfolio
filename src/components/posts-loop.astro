@@ -4,7 +4,9 @@ const allPosts = await getCollection("posts");
 
 const { count } = Astro.props;
 
-const sortedPosts = allPosts.toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
+const sortedPosts = allPosts.toSorted(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
 
 const posts = sortedPosts.slice(0, count).map((post) => {
   return {
