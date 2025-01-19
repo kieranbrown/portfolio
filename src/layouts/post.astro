@@ -1,9 +1,9 @@
 ---
 import Layout from "./main.astro";
-const { title } = Astro.props;
+const { post } = Astro.props;
 ---
 
-<Layout title={title}>
+<Layout title={post.data.title}>
   <main
     class="relative z-30 max-w-4xl pb-1 mx-auto mt-10 bg-white dark:bg-neutral-950 md:rounded-t-md text-neutral-900"
   >
@@ -19,10 +19,13 @@ const { title } = Astro.props;
       >
       </div>
       <h1
-        class="w-full max-w-2xl mx-auto text-3xl font-bold leading-tight tracking-tighter text-left md:mb-12 md:text-4xl dark:text-neutral-100 lg:text-5xl md:leading-none"
+        class="w-full max-w-2xl mx-auto text-3xl font-bold leading-tight tracking-tighter text-left md:text-4xl dark:text-neutral-100 lg:text-5xl md:leading-none"
       >
-        {title}
+        {post.data.title}
       </h1>
+      <p class="w-full max-w-2xl mx-auto mt-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-300">
+        Posted on {post.data.date.toLocaleDateString('en-GB', { weekday:"long", year:"numeric", month:"short", day:"numeric" })}
+      </p>
     </div>
 
     <article
