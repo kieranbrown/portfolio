@@ -5,7 +5,7 @@
     "dev": "astro dev --open",
     "build": "astro check && astro build",
     "preview": "pnpm run build && astro preview",
-    "check": "biome check"
+    "check": "biome check && astro check"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
