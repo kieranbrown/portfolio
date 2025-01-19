@@ -4,7 +4,7 @@ description: >
   Securely access your Home Assistant from anywhere using Cloudflare Zero Trust and Tunnels.
   Create a custom domain that only you can access, while keeping your smart home dashboard protected from unauthorized users.
   And the best part, it's completely free!
-dateFormatted: Jan 10, 2025
+date: 2025-01-10
 ---
 
 ![Banner](https://placehold.co/616x324)
