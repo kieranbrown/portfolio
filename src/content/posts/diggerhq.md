@@ -1,11 +1,11 @@
 ---
-title: Adding Authentication to an AWS CloudFront Distribution with Terraform
+title: Automating Terraform using Digger and GitHub Actions
 description: >
-  Secure your CloudFront content while keeping infrastructure as code!
-  Discover how to implement authentication on your AWS CloudFront distributions using Terraform.
-  From basic setup to production-ready configuration, learn how to protect your assets without
-  compromising on automation or scalability.
-dateFormatted: Jan 7, 2025
+  Streamline your infrastructure deployment with the power of Digger and GitHub Actions.
+  Learn how to automate your Terraform workflows, eliminate manual approvals, and maintain
+  infrastructure as code with confidence. Perfect for teams looking to enhance their DevOps
+  practices without the added complexity.
+date: 2025-01-07
 ---
 
 ![Banner](https://placehold.co/616x324)

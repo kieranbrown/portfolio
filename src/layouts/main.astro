@@ -12,6 +12,13 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
 
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="KB Blog"
+      href={new URL("posts/rss.xml", Astro.site)}
+    />
+
     <!-- Used to add dark mode right away, adding here prevents any flicker -->
     <script is:inline>
       if (typeof Storage !== 'undefined') {

@@ -1,8 +1,11 @@
 ---
-title: Cloudflare as a free NextDNS replacement using CGPS
+title: Adding Authentication to an AWS CloudFront Distribution with Terraform
 description: >
-  Cloudflare has always had an extremely generous free tier. But did you know you can use their Gateway DNS feature to block up to 300,000 domains? This is enough for most hagezi blocklists!
-dateFormatted: Jan 7, 2025
+  Secure your CloudFront content while keeping infrastructure as code!
+  Discover how to implement authentication on your AWS CloudFront distributions using Terraform.
+  From basic setup to production-ready configuration, learn how to protect your assets without
+  compromising on automation or scalability.
+date: 2025-01-07
 ---
 
 ![Banner](https://placehold.co/616x324)
