@@ -46,6 +46,16 @@ repos:
       - id: trailing-whitespace
   - repo: local
     hooks:
+      - id: astro-check
+        name: Runs astro checks
+        entry: pnpm exec astro check
+        language: system
+        pass_filenames: false
+      - id: biome-check
+        name: Runs biome checks
+        entry: pnpm exec biome check
+        language: system
+        pass_filenames: false
       - id: restricted-file-types
         name: Check commits for unexpected binary files
         entry: Commits must not contain unexpected binary files
