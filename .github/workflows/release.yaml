@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['**']
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  sync-rc-branch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: |
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config user.name github-actions
+          git checkout -B rc
+          git push origin rc --force
