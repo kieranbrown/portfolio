@@ -4,34 +4,34 @@
     "role": "Senior DevOps Engineer",
     "company": "Chatloop",
     "description": "As the sole DevOps Engineer at Chatloop, I am responsible for building and maintaining scalable infrastructure that enables rapid, reliable product delivery.",
-    "logo": "/assets/images/experiences/chatloop.svg"
+    "logo": "/src/assets/images/experiences/chatloop.svg"
   },
   {
     "dates": "June 2022 \u00b7 December 2023",
     "role": "Lead Site Reliability Engineer",
     "company": "Click Dealer",
     "description": "As the Lead Site Reliability Engineer at Click Dealer, I was responsible for overseeing the entire AWS estate, cloud account management, platform engineering and being proactive to ensure the highest availability of our systems.",
-    "logo": "/assets/images/experiences/click-dealer.svg"
+    "logo": "/src/assets/images/experiences/click-dealer.svg"
   },
   {
     "dates": "April 2022 \u00b7 June 2022",
     "role": "Senior Site Reliability Engineer",
     "company": "Disney Streaming",
     "description": "As a Senior Site Reliability Engineer at Disney Streaming, I enhanced observability infrastructure using OpenTelemetry and optimized Jenkins CI/CD pipelines for their enterprise-scale streaming services.",
-    "logo": "/assets/images/experiences/disney.svg"
+    "logo": "/src/assets/images/experiences/disney.svg"
   },
   {
     "dates": "March 2021 \u00b7 April 2022",
     "role": "Lead Site Reliability Engineer",
     "company": "Click Dealer",
     "description": "As the Lead Site Reliability Engineer at Click Dealer, I was responsible for overseeing the entire AWS estate, cloud account management, platform engineering and being proactive to ensure the highest availability of our systems.",
-    "logo": "/assets/images/experiences/click-dealer.svg"
+    "logo": "/src/assets/images/experiences/click-dealer.svg"
   },
   {
     "dates": "October 2016 \u00b7 March 2021",
     "role": "DevOps Engineer / SWE",
     "company": "Click Dealer",
     "description": "As an Engineer at Click Dealer, I led backend development initiatives using Laravel/PHP, where I architected scalable applications and took ownership of new projects. I implemented CI/CD processes through Docker containerization, established company-wide coding standards, and served as Lead API Developer for a multi-award-winning project while providing technical guidance to the development team.",
-    "logo": "/assets/images/experiences/click-dealer.svg"
+    "logo": "/src/assets/images/experiences/click-dealer.svg"
   }
 ]

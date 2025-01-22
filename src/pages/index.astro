@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import avatarImage from "../assets/images/avatar.png";
 import Button from "../components/button.astro";
 import Separator from "../components/home/separator.astro";
 import Writings from "../components/home/writings.astro";
@@ -50,10 +52,9 @@ import Layout from "../layouts/main.astro";
             </span>
           </div>
           <div class="relative z-30 px-10">
-            <img
-              src="/assets/images/photo.png"
-              loading="eager"
-              decoding="auto"
+            <Image
+              src={avatarImage}
+              alt="Avatar"
               class="relative z-30 w-full aspect-[790/1189] md:max-w-md mx-auto dark:-translate-y-0.5"
             />
           </div>
