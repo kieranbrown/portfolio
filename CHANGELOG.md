@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/kieranbrown/portfolio/compare/v1.0.0...v1.1.0) (2025-01-22)
+
+
+### Features
+
+* use astro image optimisations ([#18](https://github.com/kieranbrown/portfolio/issues/18)) ([5ed1391](https://github.com/kieranbrown/portfolio/commit/5ed13912cee43f169014a5de5ae94e243773f2a6))
+
+
+### Continuous Integration
+
+* added staging env ([a17d2c6](https://github.com/kieranbrown/portfolio/commit/a17d2c638b72147ec3cd5bb855730dd48fd3ad8f))
+
 ## 1.0.0 (2025-01-20)
 
 
