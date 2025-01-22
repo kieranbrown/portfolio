@@ -61,7 +61,11 @@ repos:
         entry: Commits must not contain unexpected binary files
         language: fail
         types: ['binary']
-        exclude: public/.+\.(jpg|png|ico)$
+        exclude: |
+          (?x)^(
+            public/favicon\.ico|
+            src/assets/images/.+\.(jpg|png)|
+          )$
   - repo: https://github.com/gitleaks/gitleaks
     rev: v8.23.0
     hooks:
