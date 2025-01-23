@@ -15,6 +15,9 @@ const { SITE_URL } = loadEnv(mode, process.cwd(), "");
 
 // https://astro.build/config
 export default defineConfig({
+  build: {
+    format: "file",
+  },
   env: {
     schema: {
       SITE_URL: envField.string({
