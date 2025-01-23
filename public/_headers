@@ -3,3 +3,6 @@
 
 /favicon.ico
   Cache-Control: public, max-age=86400
+
+/
+  ETag: 9dd4e461268c8034f5c8564e155c67a6
