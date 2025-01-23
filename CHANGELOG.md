@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/kieranbrown/portfolio/compare/v1.1.0...v1.2.0) (2025-01-23)
+
+
+### Features
+
+* static export and optimisations ([#19](https://github.com/kieranbrown/portfolio/issues/19)) ([2b6bab4](https://github.com/kieranbrown/portfolio/commit/2b6bab47e1756328d54c48f4e8f22d6c3468ede5))
+
+
+### Miscellaneous Chores
+
+* fix page title typo in 404 page ([35fb781](https://github.com/kieranbrown/portfolio/commit/35fb781966b39dd9d5c7c82c80807bc594c93ae4))
+
 ## [1.1.0](https://github.com/kieranbrown/portfolio/compare/v1.0.0...v1.1.0) (2025-01-22)
 
 
