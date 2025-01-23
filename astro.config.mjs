@@ -1,5 +1,5 @@
 import { parseArgs } from "node:util";
-import cloudflare from "@astrojs/cloudflare";
+import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig, envField } from "astro/config";
 import { loadEnv } from "vite";
@@ -15,7 +15,6 @@ const { SITE_URL } = loadEnv(mode, process.cwd(), "");
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: cloudflare(),
   env: {
     schema: {
       SITE_URL: envField.string({
@@ -26,7 +25,6 @@ export default defineConfig({
       }),
     },
   },
-  integrations: [tailwind()],
-  output: "server",
+  integrations: [sitemap(), tailwind()],
   site: SITE_URL ?? "http://localhost:4321",
 });
