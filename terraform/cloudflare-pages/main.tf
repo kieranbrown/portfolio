@@ -2,6 +2,12 @@ data "cloudflare_zone" "this" {
   name = "kieranbrown.dev"
 }
 
+resource "cloudflare_web_analytics_site" "this" {
+  account_id   = data.cloudflare_zone.this.account_id
+  host         = data.cloudflare_zone.this.name
+  auto_install = false
+}
+
 resource "cloudflare_pages_project" "this" {
   account_id = data.cloudflare_zone.this.account_id
 
@@ -10,9 +16,11 @@ resource "cloudflare_pages_project" "this" {
   production_branch = "rc"
 
   build_config {
-    build_caching   = true
-    build_command   = "pnpm run build --mode $([ \"$CF_PAGES_BRANCH\" = main ] && echo staging || ([ \"$CF_PAGES_BRANCH\" = rc ] && echo production || echo preview))"
-    destination_dir = "dist"
+    build_caching       = true
+    build_command       = "pnpm run build --mode $([ \"$CF_PAGES_BRANCH\" = main ] && echo staging || ([ \"$CF_PAGES_BRANCH\" = rc ] && echo production || echo preview))"
+    destination_dir     = "dist"
+    web_analytics_tag   = cloudflare_web_analytics_site.this.site_tag
+    web_analytics_token = cloudflare_web_analytics_site.this.site_token
   }
 
   source {

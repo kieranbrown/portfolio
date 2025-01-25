@@ -20,6 +20,11 @@ export default defineConfig({
   },
   env: {
     schema: {
+      CLOUDFLARE_ANALYTICS_TOKEN: envField.string({
+        context: "client",
+        access: "public",
+        optional: true,
+      }),
       SITE_URL: envField.string({
         context: "client",
         access: "public",
