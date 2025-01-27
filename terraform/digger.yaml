@@ -1,0 +1,32 @@
+auto_merge: true
+telemetry: false
+
+x-common-variables:
+  workflow: &workflow
+    plan:
+      steps:
+        - &init
+          init:
+          extra_args:
+            - -backend-config=access_key=$CLOUDFLARE_S3_ACCESS_KEY
+            - -backend-config=secret_key=$CLOUDFLARE_S3_SECRET_KEY
+            - -reconfigure
+        - plan
+    apply:
+      steps:
+        - *init
+        - apply
+
+projects:
+  - name: &name cloudflare-pages
+    dir: terraform/cloudflare-pages
+    workflow: *name
+
+workflows:
+  cloudflare-pages:
+    <<: *workflow
+    env_vars:
+      state: &env_vars
+        - name: TF_VAR_cloudflare_api_token
+          value_from: CLOUDFLARE_API_TOKEN
+      commands: *env_vars
