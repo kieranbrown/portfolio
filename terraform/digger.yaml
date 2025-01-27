@@ -8,8 +8,8 @@ x-common-variables:
         - &init
           init:
           extra_args:
-            - -backend-config=access_key="$CLOUDFLARE_S3_ACCESS_KEY"
-            - -backend-config=secret_key="$CLOUDFLARE_S3_SECRET_KEY"
+            - -backend-config=access_key=$CLOUDFLARE_S3_ACCESS_KEY
+            - -backend-config=secret_key=$CLOUDFLARE_S3_SECRET_KEY
             - -reconfigure
         - plan
     apply:
