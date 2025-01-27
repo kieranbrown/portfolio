@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/kieranbrown/portfolio/compare/v1.2.0...v1.2.1) (2025-01-27)
+
+
+### Continuous Integration
+
+* import existing resources into terraform ([#22](https://github.com/kieranbrown/portfolio/issues/22)) ([ce00bd1](https://github.com/kieranbrown/portfolio/commit/ce00bd1b83b9d37b2fe1b5a2a8ac65c29cea3d10))
+
 ## [1.2.0](https://github.com/kieranbrown/portfolio/compare/v1.1.0...v1.2.0) (2025-01-23)
 
 
