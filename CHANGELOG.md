@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/kieranbrown/portfolio/compare/v1.3.0...v1.3.1) (2025-01-28)
+
+
+### Miscellaneous Chores
+
+* remove short bio ([5c631a3](https://github.com/kieranbrown/portfolio/commit/5c631a3871e79abeadbc414f4aa96ec7c2c5d780))
+
 ## [1.3.0](https://github.com/kieranbrown/portfolio/compare/v1.2.1...v1.3.0) (2025-01-28)
 
 
