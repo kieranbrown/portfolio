@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/kieranbrown/portfolio/compare/v1.2.1...v1.3.0) (2025-01-28)
+
+
+### Features
+
+* proxy cloudflare insights through custom domain ([9049e01](https://github.com/kieranbrown/portfolio/commit/9049e014a44edcd7633bd3760938df2537154519))
+
+
+### Continuous Integration
+
+* stop cloudflare pages injecting the beacon script automatically ([#24](https://github.com/kieranbrown/portfolio/issues/24)) ([3226227](https://github.com/kieranbrown/portfolio/commit/32262275cb9ae9179b297634a3af734b29666ecf))
+
 ## [1.2.1](https://github.com/kieranbrown/portfolio/compare/v1.2.0...v1.2.1) (2025-01-27)
 
 
