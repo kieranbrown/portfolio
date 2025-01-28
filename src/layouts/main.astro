@@ -47,7 +47,10 @@ const { title } = Astro.props;
           defer
           is:inline
           src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon={JSON.stringify({ token: import.meta.env.CLOUDFLARE_ANALYTICS_TOKEN })}
+          data-cf-beacon={JSON.stringify({
+            send: { to: "/cdn-cgi/rum" },
+            token: import.meta.env.CLOUDFLARE_ANALYTICS_TOKEN
+          })}
         />
       )
     }
