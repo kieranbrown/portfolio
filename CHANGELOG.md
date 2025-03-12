@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.2](https://github.com/kieranbrown/portfolio/compare/v1.3.1...v1.3.2) (2025-03-12)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump prismjs from 1.29.0 to 1.30.0 in the npm_and_yarn group across 1 directory ([#27](https://github.com/kieranbrown/portfolio/issues/27)) ([24314ec](https://github.com/kieranbrown/portfolio/commit/24314ecbe2c10d901b2dcc68b8347bc51d214e30))
+* **deps:** bump prismjs in the npm_and_yarn group across 1 directory ([24314ec](https://github.com/kieranbrown/portfolio/commit/24314ecbe2c10d901b2dcc68b8347bc51d214e30))
+
 ## [1.3.1](https://github.com/kieranbrown/portfolio/compare/v1.3.0...v1.3.1) (2025-01-28)
 
 
