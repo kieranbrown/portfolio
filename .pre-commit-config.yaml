@@ -45,6 +45,7 @@ repos:
       - id: mixed-line-ending
       - id: pretty-format-json
         args: [--autofix, --no-sort-keys]
+        exclude: ^package\.json$
       - id: trailing-whitespace
   - repo: local
     hooks:

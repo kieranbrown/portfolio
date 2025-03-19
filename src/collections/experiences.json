@@ -1,9 +1,16 @@
 [
   {
-    "dates": "December 2023 \u00b7 Present",
+    "dates": "March 2025 \u00b7 Present",
+    "role": "DevOps Engineer",
+    "company": "Laravel",
+    "description": "As a DevOps Engineer at Laravel, I architect and elevate Laravel's core infrastructure, powering Forge, Envoyer, and Vapor to deliver seamless deployment solutions.",
+    "logo": "laravel"
+  },
+  {
+    "dates": "December 2023 \u00b7 March 2025",
     "role": "Senior DevOps Engineer",
     "company": "Chatloop",
-    "description": "As the sole DevOps Engineer at Chatloop, I am responsible for building and maintaining scalable infrastructure that enables rapid, reliable product delivery.",
+    "description": "As the sole DevOps Engineer at Chatloop, I was responsible for building and maintaining scalable infrastructure that enables rapid, reliable product delivery.",
     "logo": "chatloop"
   },
   {
