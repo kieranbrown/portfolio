@@ -3,8 +3,8 @@ version: 2
 updates:
   - package-ecosystem: github-actions
     directories:
-      - "/"
-      - "/.github/actions/**"
+      - /
+      - /.github/actions/**
     schedule:
       interval: weekly
       day: monday
@@ -32,7 +32,7 @@ updates:
       interval: weekly
       day: monday
     groups:
-      npm:
+      terraform:
         update-types:
           - minor
           - patch
