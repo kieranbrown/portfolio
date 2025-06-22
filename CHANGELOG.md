@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.4.1](https://github.com/kieranbrown/portfolio/compare/v1.4.0...v1.4.1) (2025-06-22)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump the npm group with 6 updates ([#34](https://github.com/kieranbrown/portfolio/issues/34)) ([468cea1](https://github.com/kieranbrown/portfolio/commit/468cea163272b049c046e00a704426f0e534a42a))
+* **deps:** bump brace-expansion from 2.0.1 to 2.0.2 in the npm_and_yarn group across 1 directory ([#38](https://github.com/kieranbrown/portfolio/issues/38)) ([0f8d982](https://github.com/kieranbrown/portfolio/commit/0f8d982ad569763eb85f6cf7a3eb1537850348a1))
+
+
+### Code Refactoring
+
+* dependabot formatting ([7144bbf](https://github.com/kieranbrown/portfolio/commit/7144bbf623b18d7d8cad29503fbfc0544c10deb6))
+* dependabot formatting ([3bfc52a](https://github.com/kieranbrown/portfolio/commit/3bfc52a69834c37bf5ca3bf4eeb32304ecea1874))
+
+
+### Continuous Integration
+
+* added workflow files ([47405d3](https://github.com/kieranbrown/portfolio/commit/47405d37b9d5c183ce8d3910d0ad8c278cc43c2b))
+* automate terraform versions with dependabot ([1e4cddf](https://github.com/kieranbrown/portfolio/commit/1e4cddf059bcd9d4d4ccb4d60a139b815dbedac0))
+* fix typo in dependabot-auto-merge ([f9cc4b9](https://github.com/kieranbrown/portfolio/commit/f9cc4b99001c56e7e9018f0e0433f91ac392c71f))
+
 ## [1.4.0](https://github.com/kieranbrown/portfolio/compare/v1.3.2...v1.4.0) (2025-03-19)
 
 
