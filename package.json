@@ -11,7 +11,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.4.1",
-    "@astrojs/tailwind": "^5.1.5",
+    "@astrojs/tailwind": "^6.0.2",
     "@biomejs/biome": "^1.9.4",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.13.10",
