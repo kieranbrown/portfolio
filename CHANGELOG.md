@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.4.2](https://github.com/kieranbrown/portfolio/compare/v1.4.1...v1.4.2) (2025-06-28)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump @astrojs/tailwind from 5.1.5 to 6.0.2 ([#35](https://github.com/kieranbrown/portfolio/issues/35)) ([40f2cf2](https://github.com/kieranbrown/portfolio/commit/40f2cf27853ab0a9cc448b71ec0057c1977209e0))
+* **deps-dev:** bump @biomejs/biome from 1.9.4 to 2.0.6 ([#44](https://github.com/kieranbrown/portfolio/issues/44)) ([f23dd20](https://github.com/kieranbrown/portfolio/commit/f23dd208672072997c82da20bcaf82d137354113))
+* **deps-dev:** bump the npm group with 2 updates ([#43](https://github.com/kieranbrown/portfolio/issues/43)) ([d9a30e3](https://github.com/kieranbrown/portfolio/commit/d9a30e35741e1a870f9b650eef33f35cab1e6bdd))
+* **deps-dev:** bump vite from 6.3.5 to 7.0.0 ([#45](https://github.com/kieranbrown/portfolio/issues/45)) ([54cfe50](https://github.com/kieranbrown/portfolio/commit/54cfe5020e4c8174e9163032c6b692fd04c08ec7))
+* **deps:** bump cloudflare/cloudflare ([5cd606f](https://github.com/kieranbrown/portfolio/commit/5cd606f6edfb5377bd8c9e4ce8305b6fa148b9f9))
+* **deps:** bump cloudflare/cloudflare from 4.50.0 to 4.52.0 in /terraform/cloudflare-pages in the terraform group across 1 directory ([#42](https://github.com/kieranbrown/portfolio/issues/42)) ([5cd606f](https://github.com/kieranbrown/portfolio/commit/5cd606f6edfb5377bd8c9e4ce8305b6fa148b9f9))
+* **deps:** update pre-commit hooks ([#40](https://github.com/kieranbrown/portfolio/issues/40)) ([223510e](https://github.com/kieranbrown/portfolio/commit/223510e115962b7ab3cffe167a710feb5eb76573))
+
+
+### Continuous Integration
+
+* configure dependabot to run weekly on saturday at 05:00 ([b59b917](https://github.com/kieranbrown/portfolio/commit/b59b9171d8c1d70e00dc98470094059a1a6170f7))
+* fix invalid dependabot time config ([f9831b2](https://github.com/kieranbrown/portfolio/commit/f9831b2a35aa0eddfeccb0638da1bc4d086c56a2))
+
 ## [1.4.1](https://github.com/kieranbrown/portfolio/compare/v1.4.0...v1.4.1) (2025-06-22)
 
 
