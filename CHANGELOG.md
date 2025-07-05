@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.3](https://github.com/kieranbrown/portfolio/compare/v1.4.2...v1.4.3) (2025-07-05)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump the npm group with 3 updates ([#46](https://github.com/kieranbrown/portfolio/issues/46)) ([8d79ccc](https://github.com/kieranbrown/portfolio/commit/8d79ccc9b345aa1f9a6af5165812183667c95aa5))
+
 ## [1.4.2](https://github.com/kieranbrown/portfolio/compare/v1.4.1...v1.4.2) (2025-06-28)
 
 
