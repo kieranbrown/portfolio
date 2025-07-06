@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.4](https://github.com/kieranbrown/portfolio/compare/v1.4.3...v1.4.4) (2025-07-06)
+
+
+### Continuous Integration
+
+* test ([507709a](https://github.com/kieranbrown/portfolio/commit/507709a4471c8bc654c7dcf2353f7e131e111932))
+
 ## [1.4.3](https://github.com/kieranbrown/portfolio/compare/v1.4.2...v1.4.3) (2025-07-06)
 
 
