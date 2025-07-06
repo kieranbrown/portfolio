@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.3](https://github.com/kieranbrown/portfolio/compare/v1.4.2...v1.4.3) (2025-07-06)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump the npm group with 3 updates ([#46](https://github.com/kieranbrown/portfolio/issues/46)) ([8d79ccc](https://github.com/kieranbrown/portfolio/commit/8d79ccc9b345aa1f9a6af5165812183667c95aa5))
+
+
+### Continuous Integration
+
+* refactor to use reusable workflows and tweaked concurrency ([fdb4ae6](https://github.com/kieranbrown/portfolio/commit/fdb4ae6bdcceabe4f028a68e3cce45761e9c9d31))
+* use ubuntu-24.04 ([03ca936](https://github.com/kieranbrown/portfolio/commit/03ca93613befef1d125e7585193a94268985ff3f))
+
 ## [1.4.2](https://github.com/kieranbrown/portfolio/compare/v1.4.1...v1.4.2) (2025-06-28)
 
 
