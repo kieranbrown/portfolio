@@ -6,6 +6,22 @@
 ### Miscellaneous Chores
 
 * **deps-dev:** bump the npm group with 3 updates ([#46](https://github.com/kieranbrown/portfolio/issues/46)) ([8d79ccc](https://github.com/kieranbrown/portfolio/commit/8d79ccc9b345aa1f9a6af5165812183667c95aa5))
+* **main:** release 1.4.3 ([#47](https://github.com/kieranbrown/portfolio/issues/47)) ([9ec8633](https://github.com/kieranbrown/portfolio/commit/9ec86335308794be0bd3991dee948dd615f4b9d3))
+
+
+### Continuous Integration
+
+* force release-please to recreate v1.4.3 ([5365f36](https://github.com/kieranbrown/portfolio/commit/5365f364f2f77a19480e86b85f4172f453c13be7))
+* refactor to use reusable workflows and tweaked concurrency ([fdb4ae6](https://github.com/kieranbrown/portfolio/commit/fdb4ae6bdcceabe4f028a68e3cce45761e9c9d31))
+* replace dashlane with 1password ([e3ad84c](https://github.com/kieranbrown/portfolio/commit/e3ad84c07d89331ac803c3670e6b6d523acc665f))
+* use ubuntu-24.04 ([03ca936](https://github.com/kieranbrown/portfolio/commit/03ca93613befef1d125e7585193a94268985ff3f))
+
+## [1.4.3](https://github.com/kieranbrown/portfolio/compare/v1.4.2...v1.4.3) (2025-07-06)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump the npm group with 3 updates ([#46](https://github.com/kieranbrown/portfolio/issues/46)) ([8d79ccc](https://github.com/kieranbrown/portfolio/commit/8d79ccc9b345aa1f9a6af5165812183667c95aa5))
 
 
 ### Continuous Integration
