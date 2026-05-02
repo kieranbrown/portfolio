@@ -8,11 +8,11 @@
     "check": "biome check && astro check"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.8",
+    "@astrojs/check": "^0.9.9",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
     "@astrojs/tailwind": "^6.0.2",
-    "@biomejs/biome": "^2.4.13",
+    "@biomejs/biome": "^2.4.14",
     "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^22.19.1",
     "astro": "^5.18.1",
