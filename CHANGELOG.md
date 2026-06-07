@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.4](https://github.com/kieranbrown/portfolio/compare/v1.4.3...v1.4.4) (2025-08-09)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump the npm group with 2 updates ([#56](https://github.com/kieranbrown/portfolio/issues/56)) ([f31ba8b](https://github.com/kieranbrown/portfolio/commit/f31ba8b08aff044b27547a69195a916a55a3f7a2))
+* **deps-dev:** bump the npm group with 4 updates ([#52](https://github.com/kieranbrown/portfolio/issues/52)) ([9b9d6c8](https://github.com/kieranbrown/portfolio/commit/9b9d6c8fde0139ee9a33135d9f80c77f0c79749f))
+* **deps-dev:** bump the npm group with 4 updates ([#54](https://github.com/kieranbrown/portfolio/issues/54)) ([b617fa4](https://github.com/kieranbrown/portfolio/commit/b617fa44d88d2d5b8bdafcd51dda584eba3f879a))
+* **deps-dev:** bump the npm group with 4 updates ([#59](https://github.com/kieranbrown/portfolio/issues/59)) ([fe94d99](https://github.com/kieranbrown/portfolio/commit/fe94d99ec162554fa89d4b60693c6ea9a44ff5ff))
+* **deps-dev:** bump the npm group with 5 updates ([#58](https://github.com/kieranbrown/portfolio/issues/58)) ([0e9aaa1](https://github.com/kieranbrown/portfolio/commit/0e9aaa140b7816e3bbeb320d2c4ff135a547a741))
+* **deps:** bump cloudflare/cloudflare ([1c2190d](https://github.com/kieranbrown/portfolio/commit/1c2190df50f4b8e1663730dd20295a7c789d2f1a))
+* **deps:** bump cloudflare/cloudflare from 4.52.0 to 4.52.1 in /terraform/cloudflare-pages in the terraform group across 1 directory ([#55](https://github.com/kieranbrown/portfolio/issues/55)) ([1c2190d](https://github.com/kieranbrown/portfolio/commit/1c2190df50f4b8e1663730dd20295a7c789d2f1a))
+
 ## [1.4.3](https://github.com/kieranbrown/portfolio/compare/v1.4.2...v1.4.3) (2025-07-06)
 
 
