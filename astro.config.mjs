@@ -1,6 +1,6 @@
 import { parseArgs } from "node:util";
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig, envField } from "astro/config";
 import { loadEnv } from "vite";
 
@@ -33,6 +33,9 @@ export default defineConfig({
       }),
     },
   },
-  integrations: [sitemap(), tailwind()],
+  integrations: [sitemap()],
   site: SITE_URL ?? "http://localhost:4321",
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
