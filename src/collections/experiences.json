@@ -1,9 +1,23 @@
 [
   {
-    "dates": "March 2025 \u00b7 Present",
-    "role": "DevOps Engineer",
+    "dates": "September 2026 \u00b7 Present",
+    "role": "Staff Software Engineer, Infrastructure",
     "company": "Laravel",
-    "description": "As a DevOps Engineer at Laravel, I architect and elevate Laravel's core infrastructure, powering Forge, Envoyer, and Vapor to deliver seamless deployment solutions.",
+    "description": "As a Staff Software Engineer on the Infrastructure team at Laravel, I work on Laravel Cloud, building the infrastructure that powers the platform.",
+    "logo": "laravel"
+  },
+  {
+    "dates": "February 2026 \u00b7 September 2026",
+    "role": "Senior Software Engineer, Infrastructure",
+    "company": "Laravel",
+    "description": "As a Senior Software Engineer on the Infrastructure team at Laravel, I worked on Laravel Cloud, building the infrastructure that powers the platform. I developed Laravel Cloud's Managed Queues, building the infrastructure behind automatic worker provisioning and autoscaling.",
+    "logo": "laravel"
+  },
+  {
+    "dates": "March 2025 \u00b7 February 2026",
+    "role": "Senior Software Engineer, Core Services",
+    "company": "Laravel",
+    "description": "As a Senior Software Engineer working in Core Services at Laravel, I architected and elevated Laravel's core infrastructure, powering Forge, Envoyer, and Vapor to deliver seamless deployment solutions. I'm particularly proud of building Laravel VPS from the ground up, including the networking and instant provisioning infrastructure that powers it. I also contributed to the relaunch of Laravel Forge.",
     "logo": "laravel"
   },
   {
