@@ -1,10 +1,14 @@
 ---
 import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 import avatarImage from "../assets/images/avatar.png";
 import Button from "../components/button.astro";
 import Separator from "../components/home/separator.astro";
 import Writings from "../components/home/writings.astro";
 import Layout from "../layouts/main.astro";
+
+// Hide the writing section until there is something to read
+const hasPosts = (await getCollection("posts")).length > 0;
 ---
 
 <Layout title="Kieran Brown">
@@ -67,6 +71,12 @@ import Layout from "../layouts/main.astro";
     </div>
   </div>
 
-  <Separator text="Some of my writing" />
-  <Writings />
+  {
+    hasPosts && (
+      <>
+        <Separator text="Some of my writing" />
+        <Writings />
+      </>
+    )
+  }
 </Layout>

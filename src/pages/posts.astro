@@ -1,7 +1,13 @@
 ---
+import { getCollection } from "astro:content";
 import PageHeading from "../components/page-heading.astro";
 import PostsLoop from "../components/posts-loop.astro";
 import Layout from "../layouts/main.astro";
+
+// Nothing to list yet, send visitors back to the homepage
+if ((await getCollection("posts")).length === 0) {
+  return Astro.redirect("/");
+}
 ---
 
 <Layout title="My Writing">
