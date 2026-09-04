@@ -44,10 +44,12 @@ const hasPosts = (await getCollection("posts")).length > 0;
       )
     }
   </head>
-  <body class="antialiased bg-white dark:bg-neutral-950">
+  <body class="flex flex-col antialiased bg-white dark:bg-neutral-950 min-h-dvh">
     <SquareLines />
     <Header />
-    <slot />
+    <main class="flex-1">
+      <slot />
+    </main>
     <Footer />
     <script src="../assets/js/main.js" />
     {
