@@ -6,7 +6,7 @@ symlink to this file, so edit `AGENTS.md` only.
 ## What this is
 
 Kieran Brown's personal portfolio at <https://kieranbrown.dev>. A static
-site built with Astro 5 and Tailwind CSS 3, deployed to Cloudflare Pages.
+site built with Astro 7 and Tailwind CSS 4, deployed to Cloudflare Pages.
 The Pages project is managed with Terraform in `terraform/cloudflare-pages`
 and applied by Digger from GitHub Actions. Pushes to `main` are built with
 `--mode production` and deployed straight to <https://kieranbrown.dev>;
@@ -14,10 +14,11 @@ every other branch gets a preview deployment built with `--mode preview`.
 
 ## Toolchain
 
-- Node 22 (`.node-version`) and pnpm 10 (`packageManager` in
-  `package.json`).
-- Biome formats and lints JS/TS (`biome.json`). Astro files are checked by
-  `astro check`.
+- Node 24 (`.node-version`) and pnpm 10 (`packageManager` in
+  `package.json`). pnpm settings live in `pnpm-workspace.yaml`.
+- Biome formats and lints JS/TS/CSS/JSON (`biome.json`). Astro files are
+  checked by `astro check`. Biome only parses `.astro` frontmatter, so
+  `noUnusedImports`/`noUnusedVariables` are off for those files.
 - Git hooks are defined in `.pre-commit-config.yaml` and run with **prek**,
   a Rust reimplementation of pre-commit. Do not install or call
   `pre-commit` itself.
@@ -49,17 +50,21 @@ without that, run `pnpm exec astro dev`.
 - `src/collections/` holds JSON data: `menu.json` (navigation) and
   `experiences.json` (work history shown on `/about`).
 - `src/content/posts/` holds Markdown blog posts. The collection schema in
-  `src/content/config.ts` requires `title`, `description` and `date`.
+  `src/content.config.ts` requires `title`, `description` and `date`. The
+  collection uses the `glob()` loader and skips `_`-prefixed drafts.
 - `src/assets/` holds `css/main.css` (dark toggle animations),
   `js/main.js` (sticky header, dark mode toggle, mobile menu) and images.
 - `public/` holds static files, including the Cloudflare Pages `_headers`.
 
 ## Conventions
 
-- Styling is Tailwind utility classes inline in `.astro` files. The only
-  hand-written CSS is `src/assets/css/main.css`.
-- Dark mode uses Tailwind's `class` strategy. The `dark` class is added to
-  `<html>` from `localStorage.dark_mode` before first paint.
+- Styling is Tailwind utility classes inline in `.astro` files. Tailwind 4
+  is wired up through the `@tailwindcss/vite` plugin in `astro.config.mjs`
+  and configured CSS-first at the top of `src/assets/css/main.css` — there
+  is no `tailwind.config.*`.
+- Dark mode uses a `@custom-variant dark` rule in `src/assets/css/main.css`
+  rather than a config option. The `dark` class is added to `<html>` from
+  `localStorage.dark_mode` before first paint.
 - The blog is currently empty. When the `posts` collection has no entries
   the Posts nav link, the RSS `<link>` and the homepage writing section are
   hidden, and `/posts` redirects to `/`. Adding a Markdown file under

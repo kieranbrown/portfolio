@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+
 const { logo, dates, role, company, description } = Astro.props;
 const logoImage = await import(`../assets/images/experiences/${logo}.svg`);
 ---
