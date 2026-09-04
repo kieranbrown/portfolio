@@ -13,16 +13,16 @@ resource "cloudflare_pages_project" "this" {
 
   name = "portfolio"
 
-  production_branch = "rc"
+  production_branch = "main"
 
   build_config {
-    build_caching       = true
-    build_command       = "pnpm run build --mode $([ \"$CF_PAGES_BRANCH\" = main ] && echo staging || ([ \"$CF_PAGES_BRANCH\" = rc ] && echo production || echo preview))"
-    destination_dir     = "dist"
+    build_caching   = true
+    build_command   = "pnpm run build --mode $([ \"$CF_PAGES_BRANCH\" = main ] && echo production || echo preview)"
+    destination_dir = "dist"
 
     # adding the 'web_analytics_tag' without the 'web_analytics_token' will link the pages project to the analytics
     # site without automatically injecting the beacon script. this is done manually only on the production domain
-    web_analytics_tag   = cloudflare_web_analytics_site.this.site_tag
+    web_analytics_tag = cloudflare_web_analytics_site.this.site_tag
     # web_analytics_token = cloudflare_web_analytics_site.this.site_token
   }
 
@@ -32,18 +32,16 @@ resource "cloudflare_pages_project" "this" {
     config {
       owner                      = "kieranbrown"
       repo_name                  = "portfolio"
-      production_branch          = "rc"
-      preview_deployment_setting = "custom"
-      preview_branch_excludes    = ["release-please--branches--main"]
+      production_branch          = "main"
+      preview_deployment_setting = "all"
     }
   }
 }
 
 resource "cloudflare_record" "this" {
   for_each = {
-    "@"       = cloudflare_pages_project.this.subdomain
-    "www"     = cloudflare_pages_project.this.subdomain
-    "staging" = "main.${cloudflare_pages_project.this.subdomain}"
+    "@"   = cloudflare_pages_project.this.subdomain
+    "www" = cloudflare_pages_project.this.subdomain
   }
 
   zone_id = data.cloudflare_zone.this.id
