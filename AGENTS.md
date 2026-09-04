@@ -8,7 +8,9 @@ symlink to this file, so edit `AGENTS.md` only.
 Kieran Brown's personal portfolio at <https://kieranbrown.dev>. A static
 site built with Astro 5 and Tailwind CSS 3, deployed to Cloudflare Pages.
 The Pages project is managed with Terraform in `terraform/cloudflare-pages`
-and applied by Digger from GitHub Actions.
+and applied by Digger from GitHub Actions. Pushes to `main` are built with
+`--mode production` and deployed straight to <https://kieranbrown.dev>;
+every other branch gets a preview deployment built with `--mode preview`.
 
 ## Toolchain
 
@@ -19,7 +21,6 @@ and applied by Digger from GitHub Actions.
 - Git hooks are defined in `.pre-commit-config.yaml` and run with **prek**,
   a Rust reimplementation of pre-commit. Do not install or call
   `pre-commit` itself.
-- release-please cuts releases from Conventional Commit messages.
 
 ## Commands
 
@@ -63,11 +64,9 @@ without that, run `pnpm exec astro dev`.
   the Posts nav link, the RSS `<link>` and the homepage writing section are
   hidden, and `/posts` redirects to `/`. Adding a Markdown file under
   `src/content/posts/` re-enables all of them.
-- `SITE_URL` and `CLOUDFLARE_ANALYTICS_TOKEN` come from `.env.preview`,
-  `.env.staging` and `.env.production`, selected by Astro's `--mode`. Both
-  are optional locally.
-- Commit messages must follow Conventional Commits (enforced by
-  commitlint). Do not edit `CHANGELOG.md` by hand; release-please owns it.
+- `SITE_URL` and `CLOUDFLARE_ANALYTICS_TOKEN` come from `.env.preview` and
+  `.env.production`, selected by Astro's `--mode`. Both are optional locally.
+- Commit messages must follow Conventional Commits (enforced by commitlint).
 
 ## Checking your work
 
